@@ -48,7 +48,7 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand" href="/"><span style="color:cyan; font-weight:bold;">jimulle</span></a>
+						<a class="navbar-brand" href="/"><span style="font-weight:bold;">jimulle</span></a>
 					</div>
 					<div class="collapse navbar-collapse">
 						<ul class="nav navbar-nav navbar-left">
@@ -63,13 +63,13 @@
 							{%- endfor %}
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
-							<li><a href="/keystone" rel="tooltip" title="@jrulle" id="twitter">
+							<li><a href="https://twitter.com/jrulle" target="_blank" rel="tooltip" title="@jrulle" id="twitter">
 								<i class="fa fa-fw fa-twitter"></i>
 							</a></li>
-							<li><a href="/keystone/signout" rel="tooltip" title="jimulle" id="github">
+							<li><a href="https://github.com/jimulle" target="_blank" rel="tooltip" title="github" id="github">
 								<i class="fa fa-fw fa-github"></i>
 							</a></li>
-							<li><a href="/keystone/signin" rel="tooltip" title="jimulle" id="linkedin">
+							<li><a href="https://www.linkedin.com/in/jimulle" target="_blank" rel="tooltip" title="linkedin" id="linkedin">
 								<i class="fa fa-fw fa-linkedin"></i>
 							</a></li>
 						</ul>

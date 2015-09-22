@@ -5,6 +5,9 @@
 
 @import "bootstrap/bootstrap";
 
+//alt css to fix float issues with bootstrap grid-columns
+@import "bootstrap/col-hack";
+
 // The easiest way to customise Bootstrap variables while
 // being able to easily override the source files with new
 // versions is to override the ones you want in another file.
@@ -20,3 +23,6 @@
 
 // Add your own site style includes here
 @import "site/layout";
+
+//styles for typed-js
+@import "site/typed-js";

@@ -238,6 +238,10 @@
     line-height: $line-height-computed;
   }
 
+  .navbar-small-label{
+    display: none;
+  }
+
   @media (max-width: $grid-float-breakpoint-max) {
     // Dropdowns get custom display when collapsed
     .open .dropdown-menu {
@@ -259,6 +263,9 @@
           background-image: none;
         }
       }
+    }
+    .navbar-small-label{
+      display: inline;
     }
   }
 

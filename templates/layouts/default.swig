@@ -63,14 +63,14 @@
 							{%- endfor %}
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
-							<li><a href="https://twitter.com/jrulle" target="_blank" rel="tooltip" title="@jrulle" id="twitter">
-								<i class="fa fa-fw fa-twitter"></i>
+							<li><a href="https://twitter.com/jrulle" target="_blank" rel="tooltip" title="Twitter (@jrulle)" id="twitter">
+								<i class="fa fa-fw fa-twitter"></i><span class="navbar-small-label">&nbsp;Twitter</span>
 							</a></li>
-							<li><a href="https://github.com/jimulle" target="_blank" rel="tooltip" title="github" id="github">
-								<i class="fa fa-fw fa-github"></i>
+							<li><a href="https://github.com/jimulle" target="_blank" rel="tooltip" title="Github (jimulle)" id="github">
+								<i class="fa fa-fw fa-github"></i><span class="navbar-small-label">&nbsp;Github</span>
 							</a></li>
-							<li><a href="https://www.linkedin.com/in/jimulle" target="_blank" rel="tooltip" title="linkedin" id="linkedin">
-								<i class="fa fa-fw fa-linkedin"></i>
+							<li><a href="https://www.linkedin.com/in/jimulle" target="_blank" rel="tooltip" title="LinkedIn (jimulle)" id="linkedin">
+								<i class="fa fa-fw fa-linkedin"></i><span class="navbar-small-label">&nbsp;LinkedIn</span>
 							</a></li>
 						</ul>
 					</div>
@@ -107,6 +107,7 @@
 			and the KeystoneJS Content Editor. If you are not targeting IE8,
 			you can upgrade to 2.1.3 (also bundled) for better performance. #}
 		<script src="/js/jquery/jquery-1.11.2.min.js"></script>
+		<script src="/js/typed.js"></script>
 
 		{# Customise which Bootstrap javascript files are served by including
 			them specifically here, instead of bootstrap-3.3.4.min.js #}

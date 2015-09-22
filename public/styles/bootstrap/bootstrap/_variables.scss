@@ -28,7 +28,7 @@ $brand-danger:          #d9534f !default;
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-$body-bg:               linear-gradient(#fafafa,#f5f5f5);  //#fff !default;
+$body-bg:               linear-gradient(#f5f5f5,#f1f1f1);   //linear-gradient(#fafafa,#f5f5f5);  //#fff !default;
 //** Global text color on `<body>`.
 $text-color:            $gray-dark !default;
 
@@ -486,9 +486,9 @@ $pager-disabled-color:                 $pagination-disabled-color !default;
 //
 //##
 
-$jumbotron-padding:              30px !default;
+$jumbotron-padding:              15px;   //30px !default;
 $jumbotron-color:                inherit !default;
-$jumbotron-bg:                   $gray-lighter !default;
+$jumbotron-bg:                   #fff;   //$gray-lighter !default;
 $jumbotron-heading-color:        inherit !default;
 $jumbotron-font-size:            ceil(($font-size-base * 1.5)) !default;
 

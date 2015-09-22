@@ -4,10 +4,11 @@
 
 
 .jumbotron {
-  padding: $jumbotron-padding ($jumbotron-padding / 2);
+  padding: $jumbotron-padding;   //$jumbotron-padding ($jumbotron-padding / 2);
   margin-bottom: $jumbotron-padding;
   color: $jumbotron-color;
   background-color: $jumbotron-bg;
+  border: 1px solid #e6e6e6;
 
   h1,
   .h1 {

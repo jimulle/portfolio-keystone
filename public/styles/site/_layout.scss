@@ -14,3 +14,42 @@
     max-width: 100%;
     height: auto;
 }
+
+
+//jimulle styles
+
+//blocks (prefixed with ju)
+.ju-block{
+	background: #fff;
+	border: 1px solid #e6e6e6;
+	border-bottom: 3px solid $brand-primary;
+	border-radius: $border-radius-base;
+	padding: 0;
+	overflow: hidden;
+	margin: ($grid-gutter-width / 2) 0;
+
+	&:hover{
+		border-bottom: 3px solid $brand-secondary;
+
+		& img{
+			-webkit-filter: grayscale(0%);
+			filter: grayscale(0%);
+		}
+	}
+
+	& .inner{
+		padding: 15px;
+
+		@media screen and (min-width: $screen-sm-min) {
+	    padding: 30px;
+		}
+	}
+
+	& img{
+		width: 100%;
+		-webkit-filter: grayscale(50%);
+		filter: grayscale(100%);
+		//margin: -15px -15px 0 -15px;
+	}
+
+}

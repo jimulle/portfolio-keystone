@@ -3,32 +3,83 @@
 {% block content %}
 	<div class="container">
 		<div class="jumbotron">
-			<img src="/images/logo.svg" width="160">
-			<h1>Welcome</h1>
-			<p>This is your new <a href="http://keystonejs.com", target="_blank">KeystoneJS</a> website.</p>
-			<p>
-				It includes the latest versions of
-				<a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>
-				and <a href="http://www.jquery.com/" target="_blank">jQuery</a>.
-			</p>
-			<p>Visit the <a href="http://keystonejs.com/guide" target="_blank">Getting Started</a> guide to learn how to customise it.</p>
-			<hr>
-			{% if user and user.canAccessKeystone %}
-				<p>
-					<a href="/keystone" class="btn btn-lg btn-primary">Open the Admin UI</a>
-				</p>
-			{% else %}
-				<p>We have created a default Admin user for you with the email <strong>jrulle@gmail.com</strong> and the password <strong>run4fun</strong>.</p>
-				<p>
-					<a href="/keystone/signin" style="margin-right: 10px" class="btn btn-lg btn-primary">Sign in</a>
-					to use the Admin UI.
-				</p>
-			{% endif %}
-			<hr>
-			<p>
-				Remember to <a href="https://github.com/keystonejs/keystone" target="_blank">Star KeystoneJS on GitHub</a> and
-				<a href="https://twitter.com/keystonejs" target="_blank">follow @keystonejs</a> on twitter for updates.
-			</p>
+			<h1>Hello</h1>
+			<p><span id="typed-js"></span>&nbsp;</p>
 		</div>
 	</div>
+
+	<div class="container">
+		<div class="row">
+
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-hack">
+				<div class="ju-block">
+					<a href="#">
+						<img src="http://jimulle.com/images/portfolio/subway.jpg" />
+					</a>
+					<div class="inner">
+						<h2>Blocks</h2>
+						<p>content goes here...</p>
+						<br/><br/>
+						<button class="btn btn-primary">click me</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-hack">
+				<div class="ju-block">
+					<img src="http://jimulle.com/images/portfolio/advertising-bulbs.jpg" />
+					<div class="inner">
+						<h2>Blocks</h2>
+						<p>content goes here...</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-hack">
+				<div class="ju-block">
+					<img src="http://www.mattboldt.com/demos/typed-js/img/header-bg.jpg" />
+					<div class="inner">
+						<h2>Blocks</h2>
+						<p>content goes here...</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-hack">
+				<div class="ju-block">
+					<img src="http://jimulle.com/images/portfolio/advertising-bulbs.jpg" />
+					<div class="inner">
+						<h2>Blocks</h2>
+						<p>content goes here...</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-hack">
+				<div class="ju-block">
+					<a href="#">
+						<img src="http://jimulle.com/images/portfolio/subway.jpg" />
+					</a>
+					<div class="inner">
+						<h2>Blocks</h2>
+						<p>content goes here...</p>
+						<br/><br/>
+						<button class="btn btn-primary">click me</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-hack">
+				<div class="ju-block">
+					<img src="http://www.mattboldt.com/demos/typed-js/img/header-bg.jpg" />
+					<div class="inner">
+						<h2>Blocks</h2>
+						<p>content goes here...</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
 {% endblock %}

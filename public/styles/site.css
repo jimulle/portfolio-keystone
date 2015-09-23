@@ -3043,7 +3043,8 @@ tbody.collapse.in {
   position: relative;
   min-height: 50px;
   margin-bottom: 20px;
-  border: 1px solid transparent; }
+  border: 1px solid transparent;
+  border-bottom: 3px solid #47a3da; }
   .navbar:before, .navbar:after {
     content: " ";
     display: table; }
@@ -3305,19 +3306,22 @@ tbody.collapse.in {
 
 .navbar-default {
   background-color: #fff;
-  border-color: #e6e6e6; }
+  border-color: #e6e6e6;
+  border-bottom-color: #47a3da; }
   .navbar-default .navbar-brand {
     color: #47a3da; }
     .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-      color: #fbb040;
-      background-color: transparent; }
+      color: #fff;
+      background-color: #fbb040; }
   .navbar-default .navbar-text {
     color: #777; }
   .navbar-default .navbar-nav > li > a {
     color: #777; }
     .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
       color: #fbb040;
-      background-color: transparent; }
+      background-color: transparent;
+      border-bottom: 3px solid #fbb040;
+      margin-bottom: -3px; }
   .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     color: #777;
     background-color: #e6e6e6; }
@@ -3615,7 +3619,10 @@ a.badge:hover, a.badge:focus {
   margin-bottom: 15px;
   color: inherit;
   background-color: #fff;
-  border: 1px solid #e6e6e6; }
+  border: 1px solid #e6e6e6;
+  border-bottom: 3px solid #47a3da; }
+  .jumbotron:hover {
+    border-bottom: 3px solid #fbb040; }
   .jumbotron h1, .jumbotron .h1 {
     color: inherit; }
   .jumbotron p {
@@ -4948,7 +4955,7 @@ button.close {
         padding: 30px; } }
   .ju-block img {
     width: 100%;
-    -webkit-filter: grayscale(50%);
+    -webkit-filter: grayscale(100%);
     filter: grayscale(100%); }
 
 /* code for animated blinking cursor */

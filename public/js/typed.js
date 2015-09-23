@@ -152,7 +152,8 @@
             // ------------- optional ------------- //
             // backpaces a certain string faster
             // ------------------------------------ //
-            if (self.arrayPos == 1){ self.backDelay = 5; }
+            if (self.arrayPos == 0){ self.backDelay = 1500; }
+            else if (self.arrayPos == 2){ self.backDelay = 5; }
             else if (self.arrayPos == (self.strings.length - 1)){ self.backDelay = 3500; }
             else{ self.backDelay = 1500; }
 
@@ -269,7 +270,7 @@
                 // on the first string, only delete one word
                 // the stopNum actually represents the amount of chars to
                 // keep in the current string. In my case it's 14.
-                if (self.arrayPos == 1){
+                if (self.arrayPos == 2){
                   self.stopNum = 8;
                 }
                 //every other time, delete the whole typed string
@@ -402,7 +403,7 @@
 $(function(){
 
   $("#typed-js").typed({
-      strings: ["My name is Jim Ulle", "I am a front end web", "I am a full stack web developer", "I like to create digital experiences", "Check out my portfolio", "If you like what you see, lets work together"],
+      strings: ["", "My name is Jim Ulle", "I am a front end web", "I am a full stack web developer", "I like to create digital experiences", "Check out my portfolio", "If you like what you see, lets work together"],
       //stringsElement: $('#typed-strings'),
       typeSpeed: 30,
       backDelay: 1500,

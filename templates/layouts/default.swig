@@ -66,11 +66,14 @@
 							<li><a href="https://twitter.com/jrulle" target="_blank" rel="tooltip" title="Twitter (@jrulle)" id="twitter">
 								<i class="fa fa-fw fa-twitter"></i><span class="navbar-small-label">&nbsp;Twitter</span>
 							</a></li>
-							<li><a href="https://github.com/jimulle" target="_blank" rel="tooltip" title="Github (jimulle)" id="github">
-								<i class="fa fa-fw fa-github"></i><span class="navbar-small-label">&nbsp;Github</span>
-							</a></li>
 							<li><a href="https://www.linkedin.com/in/jimulle" target="_blank" rel="tooltip" title="LinkedIn (jimulle)" id="linkedin">
 								<i class="fa fa-fw fa-linkedin"></i><span class="navbar-small-label">&nbsp;LinkedIn</span>
+							</a></li>
+							<li><a href="http://stackoverflow.com/users/643482/jrulle" target="_blank" rel="tooltip" title="StackOverflow (jrulle)" id="stackoverflow">
+								<i class="fa fa-fw fa-stack-overflow"></i><span class="navbar-small-label">&nbsp;StackOverflow</span>
+							</a></li>
+							<li><a href="https://github.com/jimulle" target="_blank" rel="tooltip" title="Github (jimulle)" id="github">
+								<i class="fa fa-fw fa-github"></i><span class="navbar-small-label">&nbsp;Github</span>
 							</a></li>
 						</ul>
 					</div>

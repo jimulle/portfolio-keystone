@@ -1,5 +1,23 @@
 {% extends "../layouts/default.swig" %}
 
+{% macro showPost(post) %}
+	<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-hack">
+		<div class="ju-block">
+			{% if post.image.exists %}
+				<a href="/portfolio/project/{{ post.slug }}">
+					<img src="{{ post._.image.fit(160,160) }}" class="img">
+				</a>
+			{% endif %}
+			<div class="inner">
+				<h2>{{ post.title }}</h2>
+				<p>{{ post.content.brief | safe }}</p>
+				<br/><br/>
+				<a class="btn btn-primary" href="/portfolio/project/{{ post.slug }}">More&nbsp;&nbsp;<span class="fa fa-chevron-circle-right" aria-hidden="true"></span></a>
+			</div>
+		</div>
+	</div>
+{% endmacro %}
+
 {% block content %}
 	<div class="container">
 		<div class="jumbotron">
@@ -11,73 +29,9 @@
 	<div class="container">
 		<div class="row">
 
-			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-hack">
-				<div class="ju-block">
-					<a href="#">
-						<img src="http://jimulle.com/images/portfolio/subway.jpg" />
-					</a>
-					<div class="inner">
-						<h2>Blocks</h2>
-						<p>content goes here...</p>
-						<br/><br/>
-						<button class="btn btn-primary">click me</button>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-hack">
-				<div class="ju-block">
-					<img src="http://jimulle.com/images/portfolio/advertising-bulbs.jpg" />
-					<div class="inner">
-						<h2>Blocks</h2>
-						<p>content goes here...</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-hack">
-				<div class="ju-block">
-					<img src="http://www.mattboldt.com/demos/typed-js/img/header-bg.jpg" />
-					<div class="inner">
-						<h2>Blocks</h2>
-						<p>content goes here...</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-hack">
-				<div class="ju-block">
-					<img src="http://jimulle.com/images/portfolio/advertising-bulbs.jpg" />
-					<div class="inner">
-						<h2>Blocks</h2>
-						<p>content goes here...</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-hack">
-				<div class="ju-block">
-					<a href="#">
-						<img src="http://jimulle.com/images/portfolio/subway.jpg" />
-					</a>
-					<div class="inner">
-						<h2>Blocks</h2>
-						<p>content goes here...</p>
-						<br/><br/>
-						<button class="btn btn-primary">click me</button>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-hack">
-				<div class="ju-block">
-					<img src="http://www.mattboldt.com/demos/typed-js/img/header-bg.jpg" />
-					<div class="inner">
-						<h2>Blocks</h2>
-						<p>content goes here...</p>
-					</div>
-				</div>
-			</div>
+			{% for post in data.posts %}
+				{{ showPost(post) }}
+			{% endfor %}
 
 		</div>
 	</div>

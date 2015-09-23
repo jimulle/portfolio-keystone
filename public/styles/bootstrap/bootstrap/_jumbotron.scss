@@ -9,6 +9,11 @@
   color: $jumbotron-color;
   background-color: $jumbotron-bg;
   border: 1px solid #e6e6e6;
+  border-bottom: 3px solid $brand-primary;
+
+  &:hover {
+    border-bottom: 3px solid $brand-secondary;
+  }
 
   h1,
   .h1 {

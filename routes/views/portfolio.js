@@ -30,7 +30,7 @@ exports = module.exports = function(req, res) {
 			// Load the counts for each category
 			async.each(locals.data.tags, function(tag, next) {
 
-				keystone.list('Project').model.count().where('tags').in([category.id]).exec(function(err, count) {
+				keystone.list('Project').model.count().where('tags').in([tag.id]).exec(function(err, count) {
 					tag.postCount = count;
 					next(err);
 				});
@@ -67,7 +67,7 @@ exports = module.exports = function(req, res) {
 			})
 			.where('state', 'published')
 			.sort('-publishedDate')
-			.populate('author tags');
+			.populate('tags');
 
 		if (locals.data.tag) {
 			q.where('tags').in([locals.data.tag]);
